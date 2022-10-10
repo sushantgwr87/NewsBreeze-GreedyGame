@@ -112,7 +112,7 @@ input:focus {
     width: 100%;
 }
 
-.card-container a {
+.link-cards a {
     position: relative;
     display: block;
     width: 100%;
@@ -129,7 +129,7 @@ input:focus {
         gap: 50px;
     }
 
-    .card-container a {
+    .link-cards a {
         min-width: 30%;
         flex: 1;
     }

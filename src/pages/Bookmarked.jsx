@@ -78,7 +78,7 @@ const Bookmarked = () => {
                 <h2>Today</h2>
                 <button onClick={() => setShowLength(showLength === 7 ? cardData.length : 7)}>{showLength === 7 ? "See all..." : "See Less..."}</button>
             </div>
-            <div className='card-container'>
+            <div className='card-container link-cards'>
                 {cardData && cardData.map((val, index) => (
                     <Link to="/read-article" state={val} key={index}>
                         <SavedCard post={val} />
