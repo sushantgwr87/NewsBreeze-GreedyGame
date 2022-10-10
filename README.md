@@ -1,70 +1,75 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Greedy Games Assignment
 
-## Available Scripts
+A web app to fetch and display news from a [News API](https://newsapi.org/) with search and sort features. It is made using React.js and CSS.
 
-In the project directory, you can run:
+#### **Note:** This API does not work on hosted urls for free that's why I couldn't provide any Heroku or Netlify hosted link. For Details check [Netlify FAQ](https://answers.netlify.com/t/getting-error-426-from-newsapi-org/16101/8).
 
-### `npm start`
+## Development
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Design Details and instruction were shared before which I followed to the most. This website is designed specifically for mobile devices only.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Project File Details
 
-### `npm test`
+#### Home page
+Design for Home Page of website. It fetches an array of data from given api and renders them using map and card component.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Card Component
+This component is card design for Home page of web app. It takes one parameter which is card data from home page.
 
-### `npm run build`
+#### Bookmark and Saved Page
+Both page have same design and render only bookmarked as well as saved articles respectively on their page. They both have offline search and sort filters.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Read Article Page
+This Page shows complete article content of an specific article. **Note** Due to only limited free-access to local, only base content is fetched. 
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Search option
+- Sorting Data by date and publication source
+- Cross platform
+- Caching Data for offline using Local Storage.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Environment Variables
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run this project, you will need to add the following environment variables to your .env file
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`REACT_APP_BACKEND_URL` = https://newsapi.org/v2/everything?apiKey=(Your-API-Key)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+You can get your own free/only local running API key from Joining [News API](https://newsapi.org/).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Run Locally
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Clone the project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+  git clone https://github.com/sushantgwr87/NewsBreeze-GreedyGame
+```
 
-### Code Splitting
+Go to the project directory
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+  cd NewsBreeze-GreedyGame
+```
 
-### Analyzing the Bundle Size
+Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+  npm install
+```
 
-### Making a Progressive Web App
+Start the server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+  npm run start
+```
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Screenshots
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![App Screenshot](https://github.com/sushantgwr87/NewsBreeze-GreedyGame/blob/main/public/screenshots/home.png)
+![App Screenshot](https://github.com/sushantgwr87/NewsBreeze-GreedyGame/blob/main/public/screenshots/bookmark.png)
+![App Screenshot](https://github.com/sushantgwr87/NewsBreeze-GreedyGame/blob/main/public/screenshots/home-filter.png)
+![App Screenshot](https://github.com/sushantgwr87/NewsBreeze-GreedyGame/blob/main/public/screenshots/saved.png)
+![App Screenshot](https://github.com/sushantgwr87/NewsBreeze-GreedyGame/blob/main/public/screenshots/read-page.png)
