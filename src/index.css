@@ -1,13 +1,88 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primaryColor: #F8F8FB;
+  --secondaryColor: #000;
+  --btn-color: #46d146;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*width*/
+::-webkit-scrollbar {
+  width: 5px;
+  color: #000;
+}
+
+/*track*/
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+/*handle*/
+::-webkit-scrollbar-thumb {
+  background-color: #a8f29b;
+  border-radius: 3px;
+}
+
+/*handle on hover*/
+::webkit-scrollbar-thumb:hover {
+  background-color: #9a9a9a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.hover-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 100px 1px inset rgba(108, 108, 108, 0.4);
+}
+
+.main-container {
+  position: relative;
+  display: block;
+  background-color: var(--primaryColor);
+  height: 100%;
+  width: 100%;
+}
+
+.padded-page {
+  padding: 50px 20px;
+}
+
+hr {
+  position: relative;
+  display: block;
+  height: 6px;
+  border: none;
+  margin: 20px auto;
+  width: 100%;
+  background-color: #d8d8d8;
+  border-radius: 100px;
+}
+
+svg {
+  padding: 0;
+  margin: 0;
 }

@@ -1,0 +1,136 @@
+.logo-image {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.page-btn {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-image a {
+    background-color: var(--btn-color);
+    padding: 8px 8px 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.search-wrap {
+    position: relative;
+    display: block;
+}
+
+.filter-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: -10px;
+    opacity: 0;
+    z-index: -1;
+    right: 0;
+    padding: 15px 15px;
+    background-color: #fff;
+    gap: 15px;
+    border-radius: 0 0 5px 5px;
+    transition: all 0.3s ease;
+}
+
+.show {
+    top: 35px;
+    z-index: 2;
+    opacity: 1;
+}
+
+.filter-input {
+    position: relative;
+    display: flex;
+    gap: 5px;
+}
+
+.filter-menu label {
+    font-size: 12px;
+}
+
+input {
+    border: none;
+    background-color: #fff;
+}
+
+input:focus {
+    outline: none;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px 10px;
+    background-color: #fff;
+}
+
+.search input {
+    width: 100%;
+    flex: 80%;
+    font-size: 14px;
+    padding: 3px 5px;
+    color: #000;
+}
+
+.search button {
+    padding: 0;
+    flex: 10%;
+}
+
+.icon {
+    color: rgb(172, 172, 172);
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    transform: scale(1.5);
+}
+
+.error-text {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.card-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+}
+
+.card-container a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .card-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .card-container a {
+        min-width: 30%;
+        flex: 1;
+    }
+}
