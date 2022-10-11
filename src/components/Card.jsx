@@ -20,7 +20,7 @@ const Card = ({ post }) => {
     useEffect(() => {
         setBookmarkData(JSON.parse(localStorage.getItem("bookmarkedArticles")));
         setSaveCardData(JSON.parse(localStorage.getItem("savedArticles")));
-    }, [location,bookmarkData,saveCardData]);
+    }, [location]);
 
     useEffect(() => {
         if (bookmarkData && saveCardData) {
